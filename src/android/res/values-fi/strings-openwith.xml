@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="send_to_new_note">Lähetä uuteen muistiinpanoon</string>
+    <string name="send_to_hatsa">Lähetä uuteen muistiinpanoon</string>
     <string name="send_to_current_task">Lähetä avoimeen tehtävään</string>
 </resources>

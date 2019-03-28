@@ -87,7 +87,7 @@ SOFTWARE.
     <!-- android -->
     <platform name="android">
 
-        <preference name="ANDROID_MIME_TYPE" />
+        <preference name="ANDROID_MIME_TYPE" default="text/*" />
         <preference name="ANDROID_EXTRA_ACTIONS" default=" " />
 
         <js-module src="www/openwith.js" name="openwith">
@@ -95,31 +95,16 @@ SOFTWARE.
         </js-module>
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application/activity">
-            <intent-filter android:label="@string/send_to_new_note">
+            <intent-filter android:label="@string/send_to_hatsa">
                 <!-- category android:name="android.intent.category.BROWSABLE" / -->
                 <!-- See https://developer.android.com/guide/topics/manifest/data-element.html -->
-                <data android:mimeType="$ANDROID_MIME_TYPE" />
+                <data android:mimeType="text/*" />
                 <action android:name="android.intent.action.SEND" />
                 $ANDROID_EXTRA_ACTIONS
                 <!-- action android:name="android.intent.action.VIEW" / -->
                 <!-- action android:name="android.intent.action.SEND_MULTIPLE" / -->
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-        </config-file>
-
-        <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <activity android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale"
-                      android:label="@string/activity_name"
-                      android:launchMode="singleTask"
-                      android:name="fi.nyholmsolutions.openwith.CurrentTaskActivity"
-                      android:theme="@android:style/Theme.DeviceDefault.NoActionBar"
-                      android:windowSoftInputMode="adjustResize">
-                <intent-filter android:label="@string/send_to_current_task">
-                    <data android:mimeType="$ANDROID_MIME_TYPE" />
-                    <action android:name="android.intent.action.SEND" />
-                    <category android:name="android.intent.category.DEFAULT" />
-                </intent-filter>
-            </activity>
         </config-file>
 
         <!-- Cordova >= 3.0.0 -->

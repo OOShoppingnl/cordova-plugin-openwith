@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="send_to_new_note">Send to new note</string>
-    <string name="send_to_current_task">Send to current task</string>
+    <string name="send_to_hatsa">Send to Hatsa!</string>
+    <!--<string name="send_to_current_task">Send to current task</string>-->
 </resources>
