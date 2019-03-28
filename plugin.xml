@@ -41,11 +41,6 @@ SOFTWARE.
 	<license>MIT</license>
     <keywords>cordova,phonegap,openwith,ios,android</keywords>
 
-    <!-- ios -->
-    <platform name="ios">
-
-    </platform>
-
     <!-- android -->
     <platform name="android">
 
