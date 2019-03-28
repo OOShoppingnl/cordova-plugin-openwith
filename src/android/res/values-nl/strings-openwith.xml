@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="send_to_hatsa">Stuur naar Hatsa!</string>
+    <!--<string name="send_to_current_task">Send to current task</string>-->
+</resources>
