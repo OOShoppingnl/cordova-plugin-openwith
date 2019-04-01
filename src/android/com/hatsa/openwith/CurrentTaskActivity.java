@@ -1,4 +1,4 @@
-package fi.nyholmsolutions.openwith;
+package com.hatsa.openwith;
 
 public class CurrentTaskActivity extends AbstractOpenwithActivity {
     @Override

@@ -1,4 +1,4 @@
-package fi.nyholmsolutions.openwith;
+package com.hatsa.openwith;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

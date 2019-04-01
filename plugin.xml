@@ -27,7 +27,7 @@ SOFTWARE.
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="fi.nyholmsolutions.cordova.openwith"
+    id="com.hatsa.openwith"
     version="1.1.5">
 
     <name>OpenWith</name>
@@ -35,8 +35,8 @@ SOFTWARE.
     <engines>
         <engine name="cordova" version=">=6.0.0" />
     </engines>
-    <repo>https://github.com/nyholmsolutions/cordova-plugin-openwith.git</repo>
-    <issue>https://github.com/nyholmsolutions/cordova-plugin-openwith/issues</issue>
+    <repo>https://github.com/OOShoppingnl/cordova-plugin-openwith.git</repo>
+    <issue>https://github.com/OOShoppingnl/cordova-plugin-openwith/issues</issue>
 
 	<license>MIT</license>
     <keywords>cordova,phonegap,openwith,ios,android</keywords>
@@ -67,18 +67,18 @@ SOFTWARE.
         <!-- Cordova >= 3.0.0 -->
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="OpenWithPlugin">
-				<param name="android-package" value="fi.nyholmsolutions.openwith.OpenWithPlugin"/>
+				<param name="android-package" value="com.hatsa.openwith.OpenWithPlugin"/>
 			</feature>
             <preference name="AndroidLaunchMode" value="singleTask"/>
         </config-file>
 
         <!-- cordova plugin src files -->
-        <source-file src="src/android/fi/nyholmsolutions/openwith/OpenWithPlugin.java" target-dir="src/fi/nyholmsolutions/openwith" />
-        <source-file src="src/android/fi/nyholmsolutions/openwith/PluginResultSender.java" target-dir="src/fi/nyholmsolutions/openwith" />
-        <source-file src="src/android/fi/nyholmsolutions/openwith/Serializer.java" target-dir="src/fi/nyholmsolutions/openwith" />
-        <source-file src="src/android/fi/nyholmsolutions/openwith/ByteStreams.java" target-dir="src/fi/nyholmsolutions/openwith" />
-        <source-file src="src/android/fi/nyholmsolutions/openwith/AbstractOpenwithActivity.java" target-dir="src/fi/nyholmsolutions/openwith" />
-        <source-file src="src/android/fi/nyholmsolutions/openwith/CurrentTaskActivity.java" target-dir="src/fi/nyholmsolutions/openwith" />
+        <source-file src="src/android/com/hatsa/openwith/OpenWithPlugin.java" target-dir="src/com/hatsa/openwith" />
+        <source-file src="src/android/com/hatsa/openwith/PluginResultSender.java" target-dir="src/com/hatsa/openwith" />
+        <source-file src="src/android/com/hatsa/openwith/Serializer.java" target-dir="src/com/hatsa/openwith" />
+        <source-file src="src/android/com/hatsa/openwith/ByteStreams.java" target-dir="src/com/hatsa/openwith" />
+        <source-file src="src/android/com/hatsa/openwith/AbstractOpenwithActivity.java" target-dir="src/com/hatsa/openwith" />
+        <source-file src="src/android/com/hatsa/openwith/CurrentTaskActivity.java" target-dir="src/com/hatsa/openwith" />
 
         <resource-file src="src/android/res/values/strings-openwith.xml" target="res/values/strings-openwith.xml" />
         <resource-file src="src/android/res/values-sv/strings-openwith.xml" target="res/values-sv/strings-openwith.xml" />

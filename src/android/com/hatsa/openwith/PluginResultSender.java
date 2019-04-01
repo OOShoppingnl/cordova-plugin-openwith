@@ -1,4 +1,4 @@
-package fi.nyholmsolutions.openwith;
+package com.hatsa.openwith;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.PluginResult;

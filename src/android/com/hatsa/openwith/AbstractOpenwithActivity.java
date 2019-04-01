@@ -1,4 +1,4 @@
-package fi.nyholmsolutions.openwith;
+package com.hatsa.openwith;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,7 +9,7 @@ abstract class AbstractOpenwithActivity extends Activity {
     protected void onCreate(final Bundle state) {
         super.onCreate(state);
         final Intent intent = this.getIntent();
-        final Intent newIntent = new Intent(this, com.hatsa.app.MainActivity.class);
+        final Intent newIntent = new Intent(this, com.hatsa.MainActivity.class);
         newIntent.setAction(intent.getAction());
         newIntent.setFlags(intent.getFlags());
         newIntent.setDataAndType(intent.getData(), intent.getType());

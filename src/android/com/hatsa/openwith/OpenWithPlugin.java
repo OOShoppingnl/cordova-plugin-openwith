@@ -1,4 +1,4 @@
-package fi.nyholmsolutions.openwith;
+package com.hatsa.openwith;
 
 import android.content.ContentResolver;
 import android.content.Intent;

@@ -121,7 +121,7 @@ function initOpenwithPlugin (root) {
   // a simple function to test that the plugin is correctly installed
   openwith.about = function () {
     log(DEBUG, 'about()')
-    return 'cordova-plugin-openwith, (c) 2019 nyholmsolutions.fi (c) 2017 fovea.cc'
+    return 'cordova-plugin-openwith, (c) 2019 hatsa.com (c) 2017 Hatsa'
   }
 
   var findHandler = function (callback) {

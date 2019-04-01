@@ -1,4 +1,4 @@
-package fi.nyholmsolutions.openwith;
+package com.hatsa.openwith;
 
 import android.content.ClipData;
 import android.content.ContentResolver;
