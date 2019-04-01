@@ -10,6 +10,7 @@ abstract class AbstractOpenwithActivity extends Activity {
         super.onCreate(state);
         final Intent intent = this.getIntent();
         final Intent newIntent = new Intent(this, com.hatsa.MainActivity.class);
+        newIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         newIntent.setAction(intent.getAction());
         newIntent.setFlags(intent.getFlags());
         newIntent.setDataAndType(intent.getData(), intent.getType());
